@@ -1,0 +1,15 @@
+body {
+    font-family: 'Roboto' ;
+    text-align: justify;
+    margin: 50px;
+}
+#sodg{color: grey;}
+#daban{color: grey;}
+#Km{
+    border: 1pt solid rgba(231, 227, 227, 0.87);
+    border-radius: 2pt;
+    background-color: rgba(231, 227, 227, 0.87);
+}
+.Hinh
+{display: inline-block;}
+.mau{text-align: center;}

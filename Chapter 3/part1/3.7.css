@@ -1,0 +1,32 @@
+.dt{
+    display: inline-block;
+    margin: 5px;
+    width: 200px;
+}
+.dt .mota{
+    padding: 10px;
+    text-align: center;
+}
+
+.dt img{
+    width: 100%;
+    height: auto;
+}
+#dt1, #dt2, #dt3 {
+    width: 100%;
+    height: auto;}
+    #dt1 {
+    float: left;
+    width: 100%;
+    }
+    #dt2 {
+    float: left;
+    width: 100%;}
+    #dt3 {
+    float: right;
+    width: 100%;}
+@media only screen and (max-width: 768px) {
+#dt1, #dt3, #dt2 {
+    float: none;
+    width: 100%;
+    } }
