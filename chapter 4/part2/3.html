@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        display: flex; 
+        justify-content: center;
+        flex-direction: column; 
+        text-align: center;
+    }
+    button {
+        background-color: crimson;
+        color: yellow;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 16px;
+    }
+    #city-image {
+        max-width: 400px;
+        height: auto;
+        margin: 20px 0; 
+        border: 1px solid transparent;
+    }
+    .container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="image-container">
+            <img id="city-image" src="" alt="Hình ảnh">
+        </div>
+        <div id="button-container">
+            <button onclick="HienThi('hanoi')">Hà Nội</button>
+            <button onclick="HienThi('hue')">Huế</button>
+            <button onclick="HienThi('danang')">Đà Nẵng</button>
+        </div>
+    </div>
+    <script>
+        function HienThi(tp) {
+            let link = "";
+            if (tp == "hanoi") {
+                link = "./anh/hanoi.jpg"; 
+            } else if (tp == "hue") {
+                link = "./anh/hue.jpg"; 
+            } else if (tp == "danang") {
+                link = "./anh/danang.jpg";
+            }
+            document.getElementById("city-image").src = link;
+            document.getElementById("city-image").style.borderColor = "crimson"; 
+        }
+    </script>
+</body>
+</html>

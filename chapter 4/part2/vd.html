@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+            document.getElementById("row2").style.color = "Red";
+            document.getElementById("row2").style.fontFamily = "Arial";
+            document.getElementById("row2").style.fontSize = "30px";
+        }
+    </script>
+</head>
+<body>
+    <p id="row1">Hello World!</p>
+    <p id="row2" onclick="myFunction()">Hello World!</p>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Hienthigio">Nội dung này sẽ được thay thế</div>
+    <div>Dòng 2</div>
+    <div class="Dong3">Dòng 3</div>
+    <div>Dòng 4</div>
+    <button type="button" onclick="document.getElementsByTagName('div')[1].innerHTML='Noi dung moi cua dong'">Dòng 2</button>
+    <br>
+    <button type="button" onclick="document.getElementsByClassName('Dong3')[0].innerHTML='Noi dung moi cua dong'">Dòng 3</button>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- code bóng đèn   -->
+    <button onclick="document.getElementById('myImage').src='./anh/on.png'">Turn on</button>
+
+    <img id="myImage" src="./anh/off (1).png" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='./anh/off (1).png'">Turn off</button>
+<!-- thay đổi font chữ -->
+   <p></p>
+    <p id="demo" style="font-size: 16px;">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="changeFontSize('increase')">Tăng kích cỡ</button>
+    <!-- Nút giảm kích cỡ -->
+    <button type="button" onclick="changeFontSize('decrease')">Giảm kích cỡ</button>
+    <br>
+    <button type="button" onclick="document.getElementById('demo').style.display='none'">Ẩn đi</button>
+    <button type="button" onclick="document.getElementById('demo').style.display='block'">Hiện</button>
+    <script>
+        function changeFontSize(action) {
+            // Lấy phần tử
+            let element = document.getElementById('demo');
+            
+            // Lấy kích cỡ chữ hiện tại (loại bỏ "px")
+            let currentFontSize = parseFloat(window.getComputedStyle(element, null).getPropertyValue('font-size'));
+            
+            // Tăng hoặc giảm kích cỡ
+            if (action === 'increase') {
+                element.style.fontSize = (currentFontSize + 2) + 'px';
+            } else if (action === 'decrease') {
+                element.style.fontSize = (currentFontSize - 2) + 'px';
+            }
+        }
+    </script>
+</body>
+</html>

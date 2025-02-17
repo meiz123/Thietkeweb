@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điều chỉnh kích cỡ chữ</title>
+</head>
+<body>
+    <p id="nd">Trong khuôn khổ Mạng lưới các trường Đại học Châu Âu – Đông Nam Á (ASEA-UNINET), Phòng Khoa học & HTQT thông báo các Chương trình học bổng tài trợ Ernst Mach Grant 2025/2026.
+        1. Đối tượng: Công dân Việt Nam, ưu tiên cán bộ, sinh viên các trường đại học thành viên ASEA-UNINET
+        2. Lĩnh vực:  Các ngành Khoa học Tự nhiên, Khoa học Kỹ thuật, Khoa học Xã hội, Y học Nhân loại, Khoa học Y tế, Khoa học Nông nghiệp, Nhân vân học, Âm nhạc
+        3. Trường tiếp nhận: Các trường đại học, viện nghiên cứu thuộc Cộng hòa Áo</p>
+    <button onclick="thaykc(2)">Tăng</button>
+    <button onclick="thaykc(-2)">Giảm</button>
+
+    <script>
+        let Size = 16; 
+        function thaykc(co) {
+            Size += co; 
+            document.getElementById('nd').style.fontSize = Size + "px"; 
+        }
+    </script>
+</body>
+</html>

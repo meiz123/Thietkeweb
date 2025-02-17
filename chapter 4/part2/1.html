@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .container1 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .container1-row {
+            display: flex;
+            align-items: center;
+            gap: 10px; 
+        }
+        .container1-row label {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <form action="">
+                <div class="container1-row">
+                    <label for="HT">Họ tên:</label>
+                    <input type="text" id="HT" 
+                    onkeyup="document.getElementById('ht').innerHTML=document.getElementById('HT').value">
+                </div>
+                <div class="container1-row">
+                    <label for="NS">Ngày sinh:</label>
+                    <input type="text" id="NS" 
+                    onkeyup="document.getElementById('ns').innerHTML=document.getElementById('NS').value">
+                </div>
+                <div class="container1-row">
+                    <label for="GT">Giới tính:</label>
+                    <input type="text" id="GT" 
+                    onkeyup="document.getElementById('gt').innerHTML=document.getElementById('GT').value">
+                </div>
+            </form>
+        </div>
+        <div class="container2">
+            <span>Họ tên: </span>
+            <span id="ht">_______________</span> <br>
+            <span>Ngày sinh: </span>
+            <span id="ns">_______________</span> <br>
+            <span>Giới tính: </span>
+            <span id="gt">_______________</span>
+        </div>
+    </div>
+</body>
+</html>

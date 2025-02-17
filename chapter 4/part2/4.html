@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập 2.3-4</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 20px;
+    }
+    #city-list {
+        margin-right: 20px;
+        line-height: 2;
+    }
+    #city-display {
+        text-align: center;
+        padding: 10px; 
+        border: 5px solid transparent; 
+    }
+    #city-image {
+        max-width: 400px;
+        height: auto;
+        display: none;
+    }
+    #city-name {
+        font-size: 20px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+    <div id="city-list">
+        <span onmouseover="showCity('hanoi')">Hà Nội</span><br>
+        <span onmouseover="showCity('hue')">Huế</span><br>
+        <span onmouseover="showCity('danang')">Đà Nẵng</span><br>
+        <span onmouseover="showCity('hcm')">TP. HCM</span>
+    </div>
+
+    <div id="city-display">
+        <img id="city-image" src="" alt="City Image">
+        <div id="city-name"></div>
+    </div>
+    <script>
+    function showCity(tp) {
+
+        let link = "";
+        let tentp = "";
+        
+        if (tp == "hanoi") {
+            link = "./anh/hanoi.jpg";
+            tentp = "Thủ Đô Hà Nội";
+        } else if (tp == "hue") {
+            link = "./anh/hue.jpg";
+            tentp = "Cố Đô Huế";
+        } else if (tp == "danang") {
+            link = "./anh/danang.jpg";
+            tentp = "Thành Phố Đà Nẵng";
+        } else if (tp == "hcm") {
+            link = "./anh/hcm.jpg";
+            tentp = "Thành Phố Hồ Chí Minh";
+        }
+        document.getElementById("city-image").src = link;
+        document.getElementById("city-image").style.display = "block";
+        document.getElementById("city-name").textContent = tentp;
+        document.getElementById("city-display").style.border = "1px solid blue"; 
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Them js vao HTML</title>
+</head>
+<body>
+    <h2>Inline</h2>
+    <button onclick="alert('Hello') "> Click me</button>
+    <hr>
+    <h2>Internal</h2>
+    <!-- Đặt trong thẻ <script></script> -->
+    <p id="test">Code ban đầu</p>
+    <script>
+        document.getElementById('test').innerHTML='Code chỉnh sửa '
+    </script>
+    <hr>
+    <input id="Nd" onkeydown="document.getElementById('Ndtt').innerHTML = document.getElementById('Nd').value">
+
+    <p id="Ndtt">Nội dung ban đầu</p>
+
+    
+</body>
+</html>

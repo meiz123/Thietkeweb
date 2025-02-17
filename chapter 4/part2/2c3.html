@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1-row{
+            display: flex;
+            gap: 10px;
+        }
+        .container1-row1{
+            width: 90px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="container1-row">
+                <label class="container1-row1">Họ tên:</label>
+                <span class="container1-row2" id="HT">N/A</span>
+            </div>
+            <div class="container1-row">
+                <label class="container1-row1">Ngày sinh:</label>
+                <span class="container1-row2" id="NS">N/A</span>
+            </div>
+        </div>
+        <div class="container2">
+            <button onclick="Hoten()">Họ tên</button>
+            <button onclick="Ngaysinh()">Ngày sinh</button>
+        </div>
+    </div>
+    <script>
+        function Hoten(){
+            document.getElementById('HT').innerHTML=`Doan Diem`
+        }
+        function Ngaysinh(){
+            document.getElementById('NS').innerHTML=`05/09/2004`
+        }
+    </script>
+</body>
+</html>

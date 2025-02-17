@@ -1,0 +1,59 @@
+Nguyễn Trúc Lam
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Hue()
+        {
+            document.getElementById('Hue').src='./../images/352521770_6922050131-1024x768.webp'
+        }
+        function Danang()
+        {
+            document.getElementById('Hue').src='./../images/tải xuống (2).jpg'
+        }
+        function Hanoi()
+        {
+            document.getElementById('Hue').src='./../images/pho-co-ha-noi-11.webp'
+        }
+    </script>
+    <style>
+        body{
+            width: 500px;
+            height: 300px;
+        }
+        .tongthe{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .chu{
+            width: 70px;
+            height: 30px;
+            background-color: crimson;
+            color: yellow;
+            text-align: center;
+            align-content: center;
+            margin-right: 10px;
+            margin-top: 20px;
+        }
+        .anh{
+            width: 300px;
+            height: 200px;
+            display: block;
+            margin: auto;
+            border: 1px solid crimson;
+        }
+    </style>
+</head>
+<body>
+    <img src="./../images/352521770_6922050131-1024x768.webp" class="anh" id="Hue">
+    <div class="tongthe">
+        <span onclick="Hanoi()" class="chu">Hà Nội</span>
+        <span onclick="Hue()" class="chu">Huế</span>
+        <span onclick="Danang()" class="chu">Đà Nẵng</span>
+    </div>
+</body>
+</html>
